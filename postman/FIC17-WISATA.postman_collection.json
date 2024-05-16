@@ -1,0 +1,349 @@
+{
+	"info": {
+		"_postman_id": "03fd600f-f406-453e-9148-f983b120b5de",
+		"name": "FIC17-WISATA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3117985",
+		"_collection_link": "https://bold-satellite-2123.postman.co/workspace/New-Team-Workspace~82ebd54c-ab06-414e-a28c-44644a99c1b6/collection/3117985-03fd600f-f406-453e-9148-f983b120b5de?action=share&source=collection_link&creator=3117985"
+	},
+	"item": [
+		{
+			"name": "get user",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 1|6woWC6cvelR6PphnCEmH8GrrmCapZYc6mytu8zdv46973df8",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/api/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\":\"bahri@fic17.com\",\n    \"password\":\"12345678\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "logout",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 1|6woWC6cvelR6PphnCEmH8GrrmCapZYc6mytu8zdv46973df8",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/api/logout",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get product",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 2|eRkzSZ9vQ6AjmhIaQ9A9b8ksFydCplTyIoDVEv0C1d93b398",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/api/api-products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"api-products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get categories",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 2|eRkzSZ9vQ6AjmhIaQ9A9b8ksFydCplTyIoDVEv0C1d93b398",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/api/api-categories",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"api-categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "save product",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 2|eRkzSZ9vQ6AjmhIaQ9A9b8ksFydCplTyIoDVEv0C1d93b398",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/Users/bahri/Pictures/drink1.png"
+						},
+						{
+							"key": "name",
+							"value": "Parkir Motor",
+							"type": "text"
+						},
+						{
+							"key": "category_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "2000",
+							"type": "text"
+						},
+						{
+							"key": "criteria",
+							"value": "perorangan",
+							"type": "text"
+						},
+						{
+							"key": "favorite",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "published",
+							"type": "text"
+						},
+						{
+							"key": "stock",
+							"value": "1000",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/api-products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"api-products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update product",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 2|eRkzSZ9vQ6AjmhIaQ9A9b8ksFydCplTyIoDVEv0C1d93b398",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n     \"category_id\":\"1\",\n            \"name\":\"Sepeda\",\n            \"price\":3000,\n            \n            \"criteria\":\"perorangan\",\n            \"favorite\":1,\n            \"status\":\"published\",\n            \"stock\":2000\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/api-products/102",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"api-products",
+						"102"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete product",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 2|eRkzSZ9vQ6AjmhIaQ9A9b8ksFydCplTyIoDVEv0C1d93b398",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/api/api-products/102",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"api-products",
+						"102"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
