@@ -1,7 +1,7 @@
 <div class="main-sidebar sidebar-style-2">
     <aside id="sidebar-wrapper">
         <div class="sidebar-brand">
-            <a href="index.html">WISATA BAHRI</a>
+            <a href="index.html">WISATA BAHARI</a>
         </div>
         <div class="sidebar-brand sidebar-brand-sm">
             <a href="index.html">St</a>
@@ -24,7 +24,7 @@
 
             <li class="nav-item ">
                 <a href="{{ route('products.index') }}" class="nav-link "><i class="fas fa-columns"></i>
-                    <span>Products</span></a>
+                    <span>Tickets</span></a>
             </li>
 
     </aside>
