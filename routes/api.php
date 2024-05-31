@@ -5,6 +5,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Api\ProductController;
 use App\Http\Controllers\Api\CategoryController;
+use App\Http\Controllers\Api\OrderController;
 
 Route::get('/user', function (Request $request) {
     return $request->user();
@@ -19,3 +20,6 @@ Route::post('/logout', [AuthController::class, 'logout'])->middleware('auth:sanc
 Route::apiResource('/api-products', ProductController::class)->middleware('auth:sanctum');
 //categories
 Route::apiResource('/api-categories', CategoryController::class)->middleware('auth:sanctum');
+
+//orders
+Route::post('/api-orders', [OrderController::class, 'store'])->middleware('auth:sanctum');
