@@ -99,7 +99,7 @@
                                 </select>
                             </div>
 
-                            <div class="form-group">
+                            {{-- <div class="form-group">
                                 <label class="form-label">Photo Product</label>
                                 <div class="col-sm-9">
                                     <input type="file" class="form-control" name="image"
@@ -110,7 +110,7 @@
                                         {{ $message }}
                                     </div>
                                 @enderror
-                            </div>
+                            </div> --}}
 
                             <div class="form-group">
                                 <label class="form-label">Status</label>

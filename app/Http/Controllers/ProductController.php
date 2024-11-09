@@ -33,7 +33,7 @@ class ProductController extends Controller
             'name' => 'required',
             'description' => 'required',
             'price' => 'required',
-            'image' => 'required',
+            // 'image' => 'required',
             'criteria' => 'required',
             'favorite' => 'required',
             'status' => 'required',
@@ -63,10 +63,10 @@ class ProductController extends Controller
         $product->save();
 
         //image
-        $image = $request->file('image');
-        $image->storeAs('public/products', $product->id . '.' . $image->extension());
-        $product->image = 'products/' . $product->id . '.' . $image->extension();
-        $product->save();
+        // $image = $request->file('image');
+        // $image->storeAs('public/products', $product->id . '.' . $image->extension());
+        // $product->image = 'products/' . $product->id . '.' . $image->extension();
+        // $product->save();
 
         return redirect()->route('products.index')->with('success', 'Product created successfully');
     }

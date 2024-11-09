@@ -123,13 +123,13 @@
                                 </div>
                             </div>
 
-                            <div class="form-group">
+                            {{-- <div class="form-group">
                                 <label class="form-label mt-4">Photo Product</label>
                                 <div class="col-sm-9">
                                     <input type="file" class="form-control" name="image"
                                         @error('image') is-invalid @enderror>
                                 </div>
-                            </div>
+                            </div> --}}
 
                             <div class="form-group mb-0">
                                 <label class="form-label w-100">Criteria</label>
